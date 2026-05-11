@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b58lvkk7fxm3i"
-path="res://.godot/imported/Column.png-c6aaf87d3d469ba154124ef13646f102.ctex"
+uid="uid://bok8si20vdnd2"
+path="res://.godot/imported/Slabs.png-baf6f3361cffb316f260fbc1e484489d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSets/Column.png"
-dest_files=["res://.godot/imported/Column.png-c6aaf87d3d469ba154124ef13646f102.ctex"]
+source_file="res://TileSets/Slabs.png"
+dest_files=["res://.godot/imported/Slabs.png-baf6f3361cffb316f260fbc1e484489d.ctex"]
 
 [params]
 
