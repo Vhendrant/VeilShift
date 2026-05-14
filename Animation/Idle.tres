@@ -1,0 +1,4 @@
+[gd_resource type="AnimationNodeStateMachine" format=3 uid="uid://bpmgt373js2k5"]
+
+[resource]
+states/Start/position = Vector2(183, 108)
