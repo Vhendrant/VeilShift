@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://cs1dwms7lf0om"]
+
+[ext_resource type="Script" uid="uid://m3hpb11pcxnl" path="res://Script/main_menu.gd" id="1_c4tk2"]
+[ext_resource type="FontFile" uid="uid://dgrq4x84phfs5" path="res://Font/Sprat-Black.otf" id="2_b7rmo"]
+[ext_resource type="FontFile" uid="uid://cfe8pwsikbhfj" path="res://Font/Sprat-Bold.otf" id="3_00u4r"]
+[ext_resource type="FontFile" uid="uid://dp8738121hek5" path="res://Font/nakki_ldr.ttf" id="4_00u4r"]
+
+[node name="MainMenu" type="Node2D" unique_id=1429158208]
+script = ExtResource("1_c4tk2")
+
+[node name="Button_Manager" type="Control" parent="." unique_id=1929135665]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Start" type="Button" parent="Button_Manager" unique_id=1091130162]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 240.0
+offset_right = 865.0
+offset_bottom = 290.0
+theme_override_fonts/font = ExtResource("2_b7rmo")
+text = "Start"
+
+[node name="Settings" type="Button" parent="Button_Manager" unique_id=357467509]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 340.0
+offset_right = 865.0
+offset_bottom = 390.0
+theme_override_fonts/font = ExtResource("3_00u4r")
+text = "Settings"
+
+[node name="Credits" type="Button" parent="Button_Manager" unique_id=1305028705]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 440.0
+offset_right = 865.0
+offset_bottom = 490.0
+theme_override_fonts/font = ExtResource("3_00u4r")
+text = "Credit"
+
+[node name="Quit" type="Button" parent="Button_Manager" unique_id=2008702513]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 540.0
+offset_right = 865.0
+offset_bottom = 590.0
+theme_override_fonts/font = ExtResource("3_00u4r")
+text = "Quit"
+
+[node name="Label" type="Label" parent="." unique_id=368590429]
+offset_left = 167.0
+offset_top = 50.0
+offset_right = 1113.0
+offset_bottom = 188.0
+theme_override_fonts/font = ExtResource("4_00u4r")
+theme_override_font_sizes/font_size = 122
+text = "Veilshift"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button_Manager/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button_Manager/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Button_Manager/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Button_Manager/Quit" to="." method="_on_quit_pressed"]

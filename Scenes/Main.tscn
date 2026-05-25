@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bgbqsyvgq0ht4"]
 
 [ext_resource type="PackedScene" uid="uid://bbxkf5q71b82h" path="res://Scenes/Player.tscn" id="1_r150o"]
-[ext_resource type="Script" uid="uid://bghwvlb2n5evw" path="res://Scenes/camera_2d.gd" id="2_idj7w"]
+[ext_resource type="Script" uid="uid://bghwvlb2n5evw" path="res://Script/camera_2d.gd" id="2_idj7w"]
 
-[node name="Node2D" type="Node2D" unique_id=1630887214]
+[node name="Main" type="Node2D" unique_id=1630887214]
 scale = Vector2(2.5, 2.5)
 
 [node name="CharacterBody2D" parent="." unique_id=1856094243 instance=ExtResource("1_r150o")]
