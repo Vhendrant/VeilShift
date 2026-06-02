@@ -1,9 +1,15 @@
 [gd_scene format=3 uid="uid://cs1dwms7lf0om"]
 
 [ext_resource type="Script" uid="uid://m3hpb11pcxnl" path="res://Script/main_menu.gd" id="1_c4tk2"]
-[ext_resource type="FontFile" uid="uid://dgrq4x84phfs5" path="res://Font/Sprat-Black.otf" id="2_b7rmo"]
-[ext_resource type="FontFile" uid="uid://cfe8pwsikbhfj" path="res://Font/Sprat-Bold.otf" id="3_00u4r"]
+[ext_resource type="Texture2D" uid="uid://cn3ga8ljl58bw" path="res://Asset/main menu-idle/start idle.png" id="2_1o627"]
+[ext_resource type="Texture2D" uid="uid://chpofuimancnp" path="res://Asset/main menu-hover/start hover.png" id="3_2ey7y"]
 [ext_resource type="FontFile" uid="uid://dp8738121hek5" path="res://Font/nakki_ldr.ttf" id="4_00u4r"]
+[ext_resource type="Texture2D" uid="uid://cxviqsifh7ovh" path="res://Asset/main menu-idle/setting idle.png" id="4_u8ev7"]
+[ext_resource type="Texture2D" uid="uid://ysw4epbb3k8i" path="res://Asset/main menu-hover/setting hover.png" id="5_0ul3f"]
+[ext_resource type="Texture2D" uid="uid://bojveu1fh3fyy" path="res://Asset/main menu-idle/credits idle.png" id="6_s2uu6"]
+[ext_resource type="Texture2D" uid="uid://cvvojy2qsmrn5" path="res://Asset/main menu-hover/credits hover.png" id="7_cebuy"]
+[ext_resource type="Texture2D" uid="uid://wpor5h8e6j0h" path="res://Asset/main menu-idle/quit idle.png" id="8_3a5co"]
+[ext_resource type="Texture2D" uid="uid://b71twoto6rwae" path="res://Asset/main menu-hover/quit hover.png" id="9_ysyx0"]
 
 [node name="MainMenu" type="Node2D" unique_id=1429158208]
 script = ExtResource("1_c4tk2")
@@ -14,41 +20,49 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Start" type="Button" parent="Button_Manager" unique_id=1091130162]
+[node name="Start" type="TextureButton" parent="Button_Manager" unique_id=1166118054]
 layout_mode = 0
-offset_left = 415.0
+offset_left = 287.0
 offset_top = 240.0
-offset_right = 865.0
-offset_bottom = 290.0
-theme_override_fonts/font = ExtResource("2_b7rmo")
-text = "Start"
+offset_right = 994.0
+offset_bottom = 334.0
+action_mode = 0
+texture_normal = ExtResource("2_1o627")
+texture_pressed = ExtResource("3_2ey7y")
+texture_hover = ExtResource("3_2ey7y")
 
-[node name="Settings" type="Button" parent="Button_Manager" unique_id=357467509]
+[node name="Settings" type="TextureButton" parent="Button_Manager" unique_id=406601382]
 layout_mode = 0
-offset_left = 415.0
+offset_left = 287.0
 offset_top = 340.0
-offset_right = 865.0
-offset_bottom = 390.0
-theme_override_fonts/font = ExtResource("3_00u4r")
-text = "Settings"
+offset_right = 994.0
+offset_bottom = 434.0
+action_mode = 0
+texture_normal = ExtResource("4_u8ev7")
+texture_pressed = ExtResource("5_0ul3f")
+texture_hover = ExtResource("5_0ul3f")
 
-[node name="Credits" type="Button" parent="Button_Manager" unique_id=1305028705]
+[node name="Credits" type="TextureButton" parent="Button_Manager" unique_id=1494052363]
 layout_mode = 0
-offset_left = 415.0
+offset_left = 287.0
 offset_top = 440.0
-offset_right = 865.0
-offset_bottom = 490.0
-theme_override_fonts/font = ExtResource("3_00u4r")
-text = "Credit"
+offset_right = 994.0
+offset_bottom = 534.0
+action_mode = 0
+texture_normal = ExtResource("6_s2uu6")
+texture_pressed = ExtResource("7_cebuy")
+texture_hover = ExtResource("7_cebuy")
 
-[node name="Quit" type="Button" parent="Button_Manager" unique_id=2008702513]
+[node name="Quit" type="TextureButton" parent="Button_Manager" unique_id=1587967279]
 layout_mode = 0
-offset_left = 415.0
+offset_left = 287.0
 offset_top = 540.0
-offset_right = 865.0
-offset_bottom = 590.0
-theme_override_fonts/font = ExtResource("3_00u4r")
-text = "Quit"
+offset_right = 994.0
+offset_bottom = 634.0
+action_mode = 0
+texture_normal = ExtResource("8_3a5co")
+texture_pressed = ExtResource("9_ysyx0")
+texture_hover = ExtResource("9_ysyx0")
 
 [node name="Label" type="Label" parent="." unique_id=368590429]
 offset_left = 167.0

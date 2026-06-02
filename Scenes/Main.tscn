@@ -6,7 +6,7 @@
 [node name="Main" type="Node2D" unique_id=1630887214]
 scale = Vector2(2.5, 2.5)
 
-[node name="CharacterBody2D" parent="." unique_id=1856094243 instance=ExtResource("1_r150o")]
+[node name="Player" parent="." unique_id=1856094243 instance=ExtResource("1_r150o")]
 position = Vector2(187, 131)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=864797373]
